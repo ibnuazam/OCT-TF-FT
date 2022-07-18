@@ -1,2 +1,3 @@
 # Ignore Dataset folder
 OCT/
+.ipynb_checkpoints/transfer_learning-checkpoint.ipynb
