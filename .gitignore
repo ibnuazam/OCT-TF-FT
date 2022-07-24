@@ -1,3 +1,4 @@
-# Ignore Dataset folder
+# Ignore Local Dataset folder
 OCT/
+# Ignore Jupyter Checkpoints cache
 .ipynb_checkpoints/transfer_learning-checkpoint.ipynb
