@@ -3,5 +3,4 @@ OCT/
 # Ignore Jupyter Checkpoints cache
 .ipynb_checkpoints/
 # Ignore local pre-trained weights
-.weights/
-weights/inception_v3_weights_tf_dim_ordering_tf_kernels_notop.h5
+weights/
