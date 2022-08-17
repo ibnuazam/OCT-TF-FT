@@ -1,5 +1,7 @@
 # Ignore Local Dataset folder
-OCT/
+OCTFull/
+OCTHalf/
+OCTQuarter/
 # Ignore Jupyter Checkpoints cache
 .ipynb_checkpoints/
 # Ignore local pre-trained weights
