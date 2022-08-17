@@ -1,4 +1,6 @@
 # Ignore Local Dataset folder
+OCT/
+# Ignore Partial Dataset folder
 OCTFull/
 OCTHalf/
 OCTQuarter/
