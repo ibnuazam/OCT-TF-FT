@@ -2,6 +2,7 @@
 OCTFull/
 OCTHalf/
 OCTQuarter/
+OCTOne-tenth/
 # Ignore Jupyter Checkpoints cache
 .ipynb_checkpoints/
 # Ignore local pre-trained weights
