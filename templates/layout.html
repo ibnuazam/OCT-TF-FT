@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		{% block head %} {% endblock %}
+		<title>{% block title %} {% endblock %}</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<link rel="stylesheet" href="{{ url_for('serveStaticResource', resource='fonts/fonts.css') }}">		
+		<link rel="stylesheet" href="{{ url_for('serveStaticResource', resource='css/font-awesome.min.css') }}">
+		<link rel="stylesheet" href="{{ url_for('serveStaticResource', resource='css/style.css') }}">
+		{% block css %} {% endblock %}
+	</head>
+	
+	<body>
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar">
+				<div class="custom-menu">
+					<button type="button" id="sidebarCollapse" class="btn btn-primary">
+						<i class="fa fa-bars"></i>
+						<span class="sr-only">Toggle Menu</span>
+					</button>
+				</div>
+				
+				<div class="p-4" style="position: fixed;">
+					<h4 style="color:white;">Sistem Deteksi<br>Kelainan Makula</h4>
+					<ul class="list-unstyled components mb-5">
+						<li>
+							<a href="index"><span class="fa fa-home mr-3"></span> Beranda</a>
+						</li>
+						<li>
+							<a href="petunjuk"><span class="fa fa-sticky-note mr-3"></span> Petunjuk</a>
+						</li>
+						<li>
+							<a href="tentang"><span class="fa fa-info-circle mr-3"></span> Tentang</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+			<!-- Page Content  -->
+			<div id="content" class="p-4 p-md-5 pt-5 mx-auto" style="width: 1076px;">
+				<h2 class="mb-4">{% block judul %} {% endblock %}</h2>
+				{% block content %} {% endblock %}
+			</div>
+		</div>
+		
+		<script src="{{ url_for('serveStaticResource', resource='js/jquery.min.js') }}"></script>
+		<script src="{{ url_for('serveStaticResource', resource='js/jquery-3.6.0.min.js') }}"></script>
+		<script src="{{ url_for('serveStaticResource', resource='js/popper.js') }}"></script>
+		<script src="{{ url_for('serveStaticResource', resource='js/bootstrap.min.js') }}"></script>
+		<script src="{{ url_for('serveStaticResource', resource='js/main.js') }}"></script>
+		<script type="text/javascript">
+			$(function($) {
+				let url = window.location.href;
+				$('nav ul li a').each(function() {
+					if (this.href === url) {
+						$(this).closest('li').addClass('active');
+						if (url === 'http://127.0.0.1:5000/hasil-bp' || url === 'http://127.0.0.1:5000/proses-bp') {
+							$('#menubp').addClass('show');
+						}
+						else if (url === 'http://127.0.0.1:5000/hasil-svm' || url === 'http://127.0.0.1:5000/proses-svm') {
+							$('#menusvm').addClass('show');
+						}
+					}
+				});
+			});
+		</script>
+		{% block js %} {% endblock %}
+	</body>
+</html>

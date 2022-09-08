@@ -10,3 +10,5 @@ OCTOne-tenth/
 .ipynb_checkpoints/
 # Ignore local pre-trained weights
 weights/
+__pycache__/
+static/

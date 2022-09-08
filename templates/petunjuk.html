@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block title %}Petunjuk{% endblock %} 
+{% block head %}
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>Petunjuk Menjalankan Program Jupyter Notebook</h2>
+    <p>Download Instalasi Anaconda dari laman <a href="https://www.anaconda.com/products/distribution" target="_blank">berikut ini</a></p>
+    <p>Jalankan Server Jupyter Notebook</p>
+    <h6>Peringatan !!!</h6>
+    <h6>Pastikan PC anda mempunyai sumber daya komputasi yang memadai.</h6>
+    <h6>Disarankan menggunakan SSD sebagai media penyimpanan instalasi Sistem Operasi dan memiliki <i>Graphical Processing Unit</i> (GPU).</h6>
+    <h6>Pastikan juga anda memiliki koneksi internet untuk instalasi Library komputasi yang dibutuhkan dalam Program</h6>
+    <img src={{url_for('static',filename='images/Jupyter.png')}} height="784" width="698">
+    <br>
+    <br>
+    <form action="http://localhost:8888/notebooks/GitHub/skripsiku/transfer-learning-vgg16-keras-100.ipynb" method="get" target="_blank">
+        <button type="submit" >
+            Mulai Program
+        </button>
+    </form>
+</div>
+</script>
+{% endblock %}

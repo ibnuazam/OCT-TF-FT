@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block title %}Tentang{% endblock %} 
+{% block head %}
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <h2 class="text-center"><strong>Tentang</strong</h2> <br> <br>
+        <h3 class="text-center"><strong>Deteksi Kelainan pada Makula Retina Mata Menggunakan <i>Transfer Learning</i> dan <i>Fine-Tuning</i></strong></h3>
+        <h5 class="text-center">
+            <strong>
+                Sistem ini dibuat untuk prototipe penelitian Skripsi dengan studi kasus klasifikasi dataset <i>Optical Coherence Tomography</i> (OCT).<br>
+                Program menggunakan server Jupyter Notebook, machine learning framework Tensorflow, API Keras, dan web framework FLask.<br>
+                Sistem menghasilkan <i>Confusion Matrix</i> dan Grafik Akurasi dan Loss masing-masing pada tahap <i>Transfer Learning</i> dan <i>Fine-Tuning</i> untuk kemudian hasil dari sistem dianalisis lebih lanjut dan menghasilkan ukuran performa <i>Accuracy, Precision, Recall, dan F1-measure</i>.<br>
+                Hasil penelitian dan dibandingkan dengan penelitian sebelumnya, metode <i>Transfer Learning</i> dikombinasikan dengan <i>Fine-Tuning</i> menghasilkan nilai akurasi yang lebih tinggi yang dicapai lebih cepat dengan <i>epoch</i> yang lebih sedikit.<br>
+            </strong>
+        </h5>
+</div>
+{% endblock %}
